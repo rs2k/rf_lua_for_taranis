@@ -22,7 +22,7 @@ local CMD_PRINT = 0x12
 local CMD_ERASE = 0x13
 
 local function isempty(s)
-  return s == nil or s == ''
+	return s == nil or s == ''
 end
 
 local function ReceiveSport()
