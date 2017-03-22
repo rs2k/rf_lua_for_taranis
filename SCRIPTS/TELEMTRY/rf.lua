@@ -99,6 +99,10 @@ local function InitUi(event)
 		horizontalCharSpacing = 6
 		verticalCharSpacing   = 10
 	end
+	if radio=="X7" then
+		horizontalCharSpacing = 6
+		verticalCharSpacing = 10
+	end
 	xyBuffer[0] = {}
 	xyBuffer[0][0] = "RaceFlight One Program Menu"
 end
