@@ -99,12 +99,15 @@ local function InitUi(event)
 		horizontalCharSpacing = 6
 		verticalCharSpacing   = 10
 	end
-	if radio=="X7" then
+	if radio=="taranisQx7" or radio=="taranisx7" or radio=="Qx7" or radio=="x7" or radio=="X7" then
 		horizontalCharSpacing = 6
 		verticalCharSpacing = 10
+		xyBuffer[0] = {}
+		xyBuffer[0][0] = radio
+	else 
+		xyBuffer[0] = {}
+		xyBuffer[0][0] = "RaceFlight One Program Menu"
 	end
-	xyBuffer[0] = {}
-	xyBuffer[0][0] = "RaceFlight One Program Menu"
 end
 
 return {init=InitUi, run=RunUi}
