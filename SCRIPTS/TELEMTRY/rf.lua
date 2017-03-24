@@ -95,13 +95,9 @@ end
 
 local function InitUi(event)
 	local ver, radio, maj, minor, rev = getVersion()
-	if radio=="x9d" or radio=="x9d+" or radio=="taranisx9e" or radio=="taranisplus" or radio=="taranis" or radio=="x9d-simu" or radio=="x9d+-simu" or radio=="taranisx9e-simu" or radio=="taranisplus-simu" or radio=="taranis-simu" then
+	if radio=="x9d" or radio=="x9d+" or radio=="taranisx9e" or radio=="taranisplus" or radio=="taranis" or radio=="x9d-simu" or radio=="x9d+-simu" or radio=="taranisx9e-simu" or radio=="taranisplus-simu" or radio=="taranis-simu" or radio=="taranisQx7" or radio=="taranisx7" or radio=="Qx7" or radio=="x7" or radio=="X7" then
 		horizontalCharSpacing = 6
 		verticalCharSpacing   = 10
-	end
-	if radio=="taranisQx7" or radio=="taranisx7" or radio=="Qx7" or radio=="x7" or radio=="X7" then
-		horizontalCharSpacing = 6
-		verticalCharSpacing = 10
 	end
 	xyBuffer[0] = {}
 	xyBuffer[0][0] = "RaceFlight One Menu"
